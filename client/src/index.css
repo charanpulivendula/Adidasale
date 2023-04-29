@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.form-input {
+  @apply block w-full rounded-md border-gray-300 shadow-sm py-2 px-3 mt-1 text-gray-700 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm;
+}
+
+.form-input:focus {
+  @apply focus:ring-indigo-500 focus:border-indigo-500;
+}
+
+button {
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+}
+
+button:focus {
+  @apply outline-none ring-2 ring-blue-500;
+}
+input{
+  background-color: rgb(229 231 235);
+}
+.retailer-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.retailer-table th,
+.retailer-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  border-right: none; /* Remove right border for last column */
+}
+
+.retailer-table th {
+  background-color: #f2f2f2;
+}
+
+.retailer-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.retailer-table tr:last-child td {
+  border-bottom: none; /* Remove bottom border for last row */
+}
+
+.retailer-table tr:hover {
+  background-color: #ddd;
+}
+
+.retailer-table td:last-child {
+  text-align: center;
+  border-right: 1px solid #ddd; /* Add right border for last column */
+}
+
+.retailer-table td:last-child button {
+  border: none;
+  background-color: transparent;
+}
+
+.retailer-table td:last-child button img {
+  width: 16px;
+  height: 16px;
+  margin: 0 4px;
+}
+.about-us-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.about-us-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.about-us-container h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.about-us-container p {
+  margin-bottom: 20px;
+}
+
+.add-button {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  background-color: #0066cc;
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.add-button:hover {
+  background-color: #004080;
+}
+
+.add-icon {
+  font-size: 24px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.post {
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.post-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-content {
+  padding: 20px;
+}
+
+.post-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.post-excerpt {
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-meta span {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.post-meta span svg {
+  margin-right: 5px;
+}
+
+.post-author svg {
+  color: #007bff;
+}
+
+.post-date svg {
+  color: #ffc107;
+}
+
+.post-comments svg {
+  color: #28a745;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
