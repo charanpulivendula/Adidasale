@@ -58,7 +58,7 @@ This project's success is solely credited to:
 
 ## Getting Started
 
-To get started with the Adidasale application, please refer to the [Adidasale Documentation](https://github.iu.edu/repuli/team_CD_ADT_Project/wiki) for detailed instructions on installation, setup, and usage.
+To get started with the Adidasale application, please refer to the [Adidasale Documentation](https://github.com/charanpulivendula/Adidasale/tree/main) for detailed instructions on installation, setup, and usage.
 
 ## Contributing
 
